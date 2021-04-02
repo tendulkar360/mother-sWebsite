@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241, 215, 65);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.carousel {
+    width: 98%;
+    margin: auto;
+}
+
+#services-page , #about-page , #order-page {
+    height: 100vh;
+}
+
+#services-page h1 , #about-page h1 , #order-page h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#services-page p , #about-page p , #order-page p {
+    padding-top: 40px;
+}
+
+#contact-page {
+    background-color: rgb(41, 38, 38);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    height: 80vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 30px;
+}
+
+input[type="text"] , textarea {
+    padding: 3px 0 3px 8px;
+    outline: none;
+    border-radius: 6px;
+}
+
+label {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 1.4rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+footer {
+    background-color: black;
+    color: grey;
+    line-height: 40px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    color: purple;
+    transition: 0.5s linear;
+
+}
+
+@media only screen and (max-width: 1330px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    #contact-page {
+        margin-top: auto;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #services-page , #about-page , #order-page , #contact-page {
+        overflow: hidden;
+    }
+}
